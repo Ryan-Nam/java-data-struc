@@ -8,7 +8,7 @@ public class Q1_Stack_Push {
         stack.push(3);
         stack.push(4);
         stack.push(5);
-//        stack.push(6); => Error: Index 5 out of bounds for length 5
+//        stack.push(6); => Error: Overflow: Data is over stack size, no more "PUSH"
         System.out.println(stack);
     }
 }

@@ -8,6 +8,10 @@ public class Q2_Stack_Pop_Peek {
         stack.push(3);
         System.out.println(stack);
         int removed = stack.pop();
+//        stack.pop();
+//        stack.pop();  // Error: Underflow => there is no more data in the stack, so no more "POP"
+
+
         int topData = stack.peek();
         System.out.printf("pop: %d\n", removed);
         System.out.printf("peek: %d\n", topData);
@@ -18,6 +22,7 @@ class MyStackk {
     private int[] array;
     private int capacity;
     private int top;
+
     public MyStackk() {
         this.array = new int[5];
         this.capacity = 5;
