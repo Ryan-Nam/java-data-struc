@@ -13,9 +13,9 @@ public class Q4_Queue_Enqueue {
 class MyQueue {
     private int[] elements;
     private int capacity;
-    private int front; // 꺼내올 요소의 인덱스
-    private int rear; // 마지막 추가 요소의 인덱스
-    private int size; // 요소 개수
+    private int front; // thing to bring out's index
+    private int rear; // last added index
+    private int size; // size
     public MyQueue() {
         this.elements = new int[5];
         this.capacity = 5;
@@ -24,7 +24,13 @@ class MyQueue {
         this.size = 0;
     }
     public void enqueue(int data) {
-        /* 해당 메소드를 구현하시오. */
+        /* method */
+        if (isEmpty()) {
+            elements[rear] = data;
+        } else {
+            elements[++rear] = data;
+        }
+        size++;
     }
     public int front() {
         return elements[front];
