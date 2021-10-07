@@ -13,6 +13,11 @@ public class note {
     *  same as well, in this case, you are reducing time-complexity by using book shelf (Data structure)
     *
     * What is Space Complexity?
+    *
+    * Stack VS Queue
+    *
+    *
+    * ArrayList VS LinkedList
     * */
 
     public static void main(String[] args) {
