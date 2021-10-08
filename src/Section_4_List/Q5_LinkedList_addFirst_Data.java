@@ -2,7 +2,7 @@ package Section_4_List;
 
 public class Q5_LinkedList_addFirst_Data {
     public static void main (String[] args) {
-        SimpleLinkedListImpl list = new SimpleLinkedListImpl();
+        SimpleLinkedListImple2 list = new SimpleLinkedListImple2();
         System.out.println(list); // List { }
         list.addFirst(11);
         list.addFirst(22);
@@ -10,9 +10,9 @@ public class Q5_LinkedList_addFirst_Data {
         System.out.println(list); // List { 33 22 11 }
     }
 }
-class SimpleLinkedListImpl {
+class SimpleLinkedListImple2 {
     private Node head;
-    public SimpleLinkedListImpl() {
+    public SimpleLinkedListImple2() {
         this.head = null;
     }
     public void addFirst(int data) {
